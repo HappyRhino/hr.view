@@ -1,0 +1,23 @@
+{
+    "name": "hr.view",
+    "description": "Views for HappyRhino",
+    "version": "0.0.0",
+    "peerDependencies": {
+        "q": "*",
+        "jquery": "*",
+        "hr.utils": "*",
+        "hr.model": "*",
+        "hr.class": "*",
+        "hr.queue": "*"
+    },
+    "devDependencies": {
+        "hr.mocha": "0.2.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/HappyRhino/hr.view.git"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/hr-mocha ./tests/index.js"
+    }
+}
