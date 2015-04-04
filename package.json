@@ -2,6 +2,7 @@
     "name": "hr.view",
     "description": "Views for HappyRhino",
     "version": "0.0.0",
+    "main": "./lib/index.js",
     "peerDependencies": {
         "q": "*",
         "jquery": "*",
