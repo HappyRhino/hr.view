@@ -1,6 +1,6 @@
 {
     "name": "hr.view",
-    "description": "Views for HappyRhino",
+    "description": "Views and templating utility for HappyRhino",
     "version": "0.1.0",
     "main": "./lib/index.js",
     "peerDependencies": {
