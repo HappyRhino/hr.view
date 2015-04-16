@@ -34,5 +34,22 @@ describe('View.Template', function() {
         v.remove();
     });
 
+    it('should correctly extend context', function() {
+        View.Template.extendContext({
+            test: function(m) { return m+" world"; }
+        })
+        var MyView = View.Template.extend({
+            template: "<%- test(message) %>"
+        });
+
+        var v = new MyView({
+            message: "hello"
+        });
+        v.appendTo($body);
+        v.update();
+
+        expect(v.html()).to.equal("hello world");
+        v.remove();
+    });
 });
 
