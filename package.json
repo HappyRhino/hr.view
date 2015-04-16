@@ -3,7 +3,7 @@
     "description": "Views and templating utility for HappyRhino",
     "version": "0.1.1",
     "main": "./lib/index.js",
-    "peerDependencies": {
+    "dependencies": {
         "q": "*",
         "jquery": "*",
         "hr.utils": "*",
