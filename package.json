@@ -8,7 +8,7 @@
         "jquery": "*",
         "hr.utils": "*",
         "hr.model": "*",
-        "hr.class": "*",
+        "hr.class": ">=1.2.0",
         "hr.queue": "*"
     },
     "devDependencies": {

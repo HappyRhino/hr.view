@@ -20,7 +20,7 @@ describe('View.Template', function() {
     var $body = $("body");
 
     it('should correctly render a template', function() {
-        var MyView = View.Template.extend({
+        var MyView = View.mixin(View.Template).extend({
             template: "Hello <b><%- message %></b>"
         });
 
@@ -38,7 +38,7 @@ describe('View.Template', function() {
         View.Template.extendContext({
             test: function(m) { return m+" world"; }
         })
-        var MyView = View.Template.extend({
+        var MyView = View.mixin(View.Template).extend({
             template: "<%- test(message) %>"
         });
 

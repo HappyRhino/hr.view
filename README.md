@@ -39,9 +39,10 @@ view.appendTo("body");
 #### Templating
 
 ```js
-var TemplateView = require("hr.view").Template;
+var View = require("hr.view");
 
-var MyView = TemplateView.extend({
+// or View.Template.extend(...)
+var MyView = View.mixin(View.Template).extend({
     template: "My name is <%- name %>",
     templateContext: function() {
         return {
