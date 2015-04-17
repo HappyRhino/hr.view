@@ -1,7 +1,7 @@
 {
     "name": "hr.view",
     "description": "Views and templating utility for HappyRhino",
-    "version": "0.2.0",
+    "version": "1.0.0",
     "main": "./lib/index.js",
     "dependencies": {
         "q": "*",
